@@ -24,22 +24,15 @@ namespace u20547430_HW4.Controllers
         public ActionResult StudyGuide()
         {
 
-            return View(ListRepository.pastPapers);
+            return View(ListRepository.studyGuides);
         }
 
-
-        public ActionResult About()
+        public ActionResult Textbook()
         {
-            ViewBag.Message = "Your application description page.";
 
-            return View();
+            return View(ListRepository.textbooks);
         }
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
 
-            return View();
-        }
     }
 }
