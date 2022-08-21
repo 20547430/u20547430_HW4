@@ -9,12 +9,19 @@ namespace u20547430_HW4.Models
     {
         public string Title { get; set; }
         public string Author { get; set; }
-        public double Price { get; set; }
         public string Subject { get; set; }
 
         //public Image Image { get; set; }
         //public SelectList selectList { get; set; }
 
+        //constuctors 
+        public Resource() { }
+        public Resource(string _title, string _author, string _subject) 
+        {
+            Title = _title;
+            Author = _author;
+            Subject = _subject;
+        }
         public abstract string GetInfo();
         public abstract override string ToString();
     }
