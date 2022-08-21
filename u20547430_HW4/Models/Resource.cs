@@ -22,6 +22,8 @@ namespace u20547430_HW4.Models
             Author = _author;
             Subject = _subject;
         }
+
+
         public abstract string GetInfo();
         public abstract override string ToString();
     }

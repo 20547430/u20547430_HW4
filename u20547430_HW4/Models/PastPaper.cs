@@ -5,35 +5,32 @@ using System.Web;
 
 namespace u20547430_HW4.Models
 {
-    public class PastPaper: Resource
+    public class PastPaper : Resource
     {
         public int Year { get; set; }
-        public string Provine { get; set; }
+        public string Province { get; set; }
         public int PaperNo { get; set; }
-
 
         public PastPaper() { }
 
-        public Manga(int _Volume, string _Studio, string _Title, string _Author, double _Price, string _Genre, string _ISBN)
+        public PastPaper(int _year, string _province, int _paperNo ,string _title, string _author, string _subject)
+            : base(_author, _title, _subject)
         {
-            base.Title = _Title;
-            base.Author = _Author;
-            base.Price = _Price;
-            base.Genre = _Genre;
-            base.ISBN = _ISBN;
-
-            this.Volume = _Volume;
-            this.Studio = _Studio;
+           
+            Year = _year;
+            Province = _province;
+            PaperNo = _paperNo;
         }
+    
 
-        public override sealed string GetInfo()
+       public override sealed string GetInfo()
         {
-            return $"Author: {Author}</br>Genre: {Genre}</br>Volume: {Volume}</br>Studio: {Studio}</br>ISBN: {ISBN}</br>Price: R{Price}</br>";
+            return $"Author: {Author}</br>Subject: {Subject}</br>Year: {Year}</br>Province: {Province}</br>Paper Number: {PaperNo}</br>P";
         }
 
         public override sealed string ToString()
         {
-            return "Manga";
+            return "PastPaper";
         }
     }
 }
