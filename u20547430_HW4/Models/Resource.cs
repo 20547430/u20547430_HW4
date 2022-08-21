@@ -5,7 +5,7 @@ using System.Web;
 
 namespace u20547430_HW4.Models
 {
-    public abstract class Resource
+    public abstract class Resource //base
     {
         public string Title { get; set; }
         public string Author { get; set; }
@@ -13,5 +13,9 @@ namespace u20547430_HW4.Models
         public string Subject { get; set; }
 
         //public Image Image { get; set; }
+        //public SelectList selectList { get; set; }
+
+        public abstract string GetInfo();
+        public abstract override string ToString();
     }
 }
