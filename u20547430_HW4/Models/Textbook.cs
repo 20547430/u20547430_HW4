@@ -5,14 +5,14 @@ using System.Web;
 
 namespace u20547430_HW4.Models
 {
-    public class StudyGuide: Resource
+    public class Textbook:Resource
     {
         public int Edition { get; set; }
         public string ISBN { get; set; }
 
-        public StudyGuide() { }
+        public Textbook() { }
 
-        public StudyGuide(int _edition, string _isbn, int _paperNo, string _title, string _author, string _subject)
+        public Textbook(int _edition, string _isbn, int _paperNo, string _title, string _author, string _subject)
             : base(_author, _title, _subject)
         {
 
@@ -28,8 +28,7 @@ namespace u20547430_HW4.Models
 
         public override sealed string ToString()
         {
-            return "StudyGuide";
+            return "Textbook";
         }
     }
 }
-    

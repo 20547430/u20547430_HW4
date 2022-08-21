@@ -124,6 +124,7 @@
     <Compile Include="Models\PastPaper.cs" />
     <Compile Include="Models\Resource.cs" />
     <Compile Include="Models\StudyGuide.cs" />
+    <Compile Include="Models\Textbook.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
